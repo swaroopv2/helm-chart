@@ -67,19 +67,19 @@ storage:
   #   options:                              # not sure if it is needed
 
   dllStorage:
-    storageSize: 3Gi
+    storageSize: 3072Gi
     storageClass: ""
     # existingClaim: ""
     # forcePermissions: false
 
   daliStorage:
-    storageSize: 1Gi
+    storageSize: 2048Gi
     storageClass: ""
     # existingClaim: ""
     # forcePermissions: false
 
   dataStorage:
-    storageSize: 1Gi
+    storageSize: 2048Gi
     storageClass: ""
     # existingClaim: ""
     # forcePermissions: false
@@ -270,15 +270,15 @@ roxie:
 thor:
 - name: thor
   prefix: thor
-  numWorkers: 2
+  numWorkers: 20
   maxJobs: 4
   maxGraphs: 2
   #managerResources:
   #  cpu: "1"
-  #  memory: "2G"
-  #workerResources:
-  #  cpu: "4"
   #  memory: "4G"
+  #workerResources:
+  #  cpu: "1"
+  #  memory: "8G"
   #eclAgentResources:
   #  cpu: "1"
   #  memory: "2G"
